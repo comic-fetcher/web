@@ -1,0 +1,8 @@
+# compiled output
+/dist
+/node_modules
+schema.graphql
+
+# Tests
+/coverage
+/.nyc_output

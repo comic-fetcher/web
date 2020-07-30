@@ -4,6 +4,9 @@ node_modules/
 .next/
 schema.graphql
 
+# Generated
+src/generated
+
 # Logs
 logs
 *.log

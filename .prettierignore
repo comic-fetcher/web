@@ -3,6 +3,9 @@
 /node_modules
 schema.graphql
 
+# Generated
+src/generated
+
 # Tests
 /coverage
 /.nyc_output

@@ -50,7 +50,16 @@
       }
     ],
     // react
-    "react/self-closing-comp": 2
+    "react/self-closing-comp": 2,
+    // jsx-a11y
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ]
   },
   "overrides": [
     {

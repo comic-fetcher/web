@@ -1,12 +1,21 @@
+import { ApolloProvider } from "@apollo/react-hooks";
 import { AppProps } from "next/app";
 import React from "react";
-import styled from "styled-components";
+
+import { createApolloClient } from "~/apollo/createClient";
 import "~/styles/tailwind.css";
+import "~/i18n";
 
 export type Props = AppProps & { className?: string };
 export const App: React.FC<Props> = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+  const client = createApolloClient();
+  return (
+    <ApolloProvider client={client}>
+      <div>
+        <Component {...pageProps} />
+      </div>
+    </ApolloProvider>
+  );
 };
-export const AppStyledComponent: typeof App = styled(App)``;
 
-export default AppStyledComponent;
+export default App;

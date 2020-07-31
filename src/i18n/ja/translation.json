@@ -1,3 +1,7 @@
 {
-  "translation": {}
+  "translation": {
+    "breadlist": {
+      "items": "{{total}}件中、{{from}}件から{{to}}件まで"
+    }
+  }
 }
